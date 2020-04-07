@@ -6,7 +6,6 @@ import {createTaskEditTemplate} from './components/task-edit.js';
 import {createTaskTemplate} from './components/task';
 
 const TASK_COUNT = 3;
-
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
 };
