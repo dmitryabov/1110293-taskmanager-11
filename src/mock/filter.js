@@ -5,7 +5,7 @@ const filterNames = [
 const generateFilters = () => {
   return filterNames.map((it) => {
     return {
-      name: it,
+      title: it,
       count: Math.floor(Math.random() * 10),
     };
   });
@@ -13,4 +13,3 @@ const generateFilters = () => {
 
 
 export {generateFilters};
-
