@@ -6,16 +6,14 @@ export const SortType = {
   DEFAULT: `default`,
 };
 
-const createSortTemplate = () => {
-  return (
-    `<div class="board__filter-list">
-      <a href="#" data-sort-type="${SortType.DEFAULT}" class="board__filter">SORT BY DEFAULT</a>
-      <a href="#" data-sort-type="${SortType.DATE_UP}" class="board__filter">SORT BY DATE up</a>
-      <a href="#" data-sort-type="${SortType.DATE_DOWN}" class="board__filter">SORT BY DATE down</a>
-    </div>`
-  );
-};
 
+const createSortTemplate = () => {
+  return `<div class="board__filter-list">
+  <a href="#" data-sort-type="${SortType.DEFAULT}" class="board__filter">SORT BY DEFAULT</a>
+  <a href="#" data-sort-type="${SortType.DATE_UP}" class="board__filter">SORT BY DATE up</a>
+  <a href="#" data-sort-type="${SortType.DATE_DOWN}" class="board__filter">SORT BY DATE down</a>
+  </div>`;
+};
 
 export default class Sort extends AbstractComponent {
   constructor() {
@@ -30,6 +28,7 @@ export default class Sort extends AbstractComponent {
 
   getSortType() {
     return this._currenSortType;
+
   }
 
   setSortTypeChangeHandler(handler) {
@@ -50,5 +49,6 @@ export default class Sort extends AbstractComponent {
 
       handler(this._currenSortType);
     });
+
   }
 }
