@@ -16,7 +16,6 @@ const DefaultRepeatingDays = {
   "su": false,
 };
 
-
 const getRandomArrayItem = (array) => {
   const randomIndex = getRandomIntegerNumber(0, array.length);
 
@@ -45,7 +44,6 @@ const generateRepeatingDays = () => {
 
 const generateTask = () => {
   const dueDate = Math.random() > 0.5 ? null : getRandomDate();
-
   return {
     description: getRandomArrayItem(DescriptionItems),
     dueDate,

@@ -5,11 +5,10 @@ const filterNames = [
 const generateFilters = () => {
   return filterNames.map((it) => {
     return {
-      title: it,
-      count: Math.floor(Math.random() * 10),
+      name: it,
+      count: Math.floor(Math.random() * 100),
     };
   });
 };
-
 
 export {generateFilters};
