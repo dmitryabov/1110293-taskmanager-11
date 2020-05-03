@@ -7,10 +7,7 @@ import {render, remove, RenderPosition} from "../utils/render.js";
 
 const SHOWING_TASKS_COUNT_ON_START = 8;
 const SHOWING_TASKS_COUNT_BY_BUTTON = 8;
-// const ShowingTasksCount = {
-//   ON_START: 8,
-//   BY_BUTTON: 8
-// };
+
 
 const renderTasks = (taskListElement, tasks, onDataChange, onViewChange) => {
   return tasks.map((task) => {
